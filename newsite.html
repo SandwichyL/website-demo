@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Me</title>
+<style>
+    .secret-button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .section-button {
+        font-size: 18px;
+        background-color: #1b6848;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        
+    }
+
+    .section-button:hover {
+        border: none;
+        padding: .8em 2.5em;
+        border-radius: 100px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: grab;
+        transition: all ease-in-out 0.2s;
+        text-align: center;
+        scale: 2;
+        background-color: #071409;
+    }
+    header {
+        height: 250px;
+        background-image: url('https://t3.ftcdn.net/jpg/04/72/09/24/360_F_472092463_biXCSvYsRVE8S05Ph7LbrxglfDr66MBE.jpg'); /* Make sure the path is correct */
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        animation: scrollBackground 15s linear infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    @keyframes scrollBackground {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -100% 0;
+        }
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #1b6848;
+        }
+        header {
+            background-color: #1b6848;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 32px;
+        }
+        nav {
+            background-color: #1b6848;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #071409;
+        }
+        #hero {
+            background-color: #1b6848;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        #hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .rounded-button {
+            padding: 15px 30px;
+            background-color: #1b6848;;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all ease-in-out 0.2s;
+        }
+        .rounded-button:hover {
+            border: none;
+            padding: .8em 2.5em;
+            border-radius: 100px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: grab;
+            transition: all ease-in-out 0.2s;
+            text-align: center;
+            scale: 2;
+            background-color: #071409;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #1b6848;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+    text-decoration: none; /* Removes the underline */
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <script src="index.js"></script>
+    <!--Header Section-->
+    <header>
+        <h1>Meet Me</h1>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <a href="newsite.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="bananas.html">Bananas</a>
+        <a href="hobbies.html">My Hobbies</a>
+        <a href="https://www.google.com/search?q=the+white+house&client=firefox-b-1-d&sca_esv=ddfd98cd2ab249ea&udm=2&biw=1536&bih=731&sxsrf=ADLYWIJgHt2_r9KW4Xdj1EjpU-t4rBnWdQ%3A1729907794409&ei=UkwcZ7_SGJea0PEPt_zksQc&ved=0ahUKEwi_w9Hc-KqJAxUXDTQIHTc-OXYQ4dUDCBA&uact=5&oq=the+white+house&gs_lp=EgNpbWciD3RoZSB3aGl0ZSBob3VzZTIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvRhQ5wZYyxdwAXgAkAEAmAH7BKABqxWqAQswLjEuMi4wLjMuMbgBA8gBAPgBAZgCCKACzxWoAgrCAgcQIxgnGOoCwgIEECMYJ8ICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgoQABiABBhDGIoFmAMJkgcLMS4xLjIuMC4zLjGgB9Ep&sclient=img">My Current Location</a>
+    </nav>
+
+<!--About Me-->
+<!---->
+<section id="About-Money">
+    <h3></h3>
+    <p></p>
+<a href="https://en.wikipedia.org/wiki/Money" class="section-button">About money</a>
+</section>
+
+<section id="pay-money">
+    <a href="payme.html" class="section-button">Pay me money</a>
+</section>
+<!-- Secret Button -->
+<a href="secretpage.html" class="secret-button">.</a>
+</body>

